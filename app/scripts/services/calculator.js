@@ -22,6 +22,9 @@ angular.module('karmaLabApp')
     };
     
     this.divide = function(a, b){
-        return a / b;
+        if(b == 0)
+        	throw new Error("divide by 0");
+        else
+        	return a / b;
     };
   });
