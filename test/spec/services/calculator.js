@@ -57,4 +57,11 @@ describe('Service: Calculator', function () {
 
   it ("should SpyOn with returnValue, returnValues, throwError, or calls");
 
+  it('should toBeCloseTo matcher is for precision math comparison', function () {
+    expect(Calculator.divide).toBeDefined();
+    var a = 1, b = 123, close = 0;
+    var divide = Calculator.divide(a, b);
+    expect(divide).toBeCloseTo(0.008, 3);
+  });
+
 });
