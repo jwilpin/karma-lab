@@ -32,8 +32,8 @@ describe('Service: Calculator', function () {
 
   it('should trhow exception when divide by 0', function () {
     expect(Calculator.divide).toBeDefined();
-    pending("No se porque no esta capturando la excepcion!");
-    expect(Calculator.divide(1, 0)).toThrowError("divide by 0");
+    //pending("No se porque no esta capturando la excepcion!");
+    expect(function(){Calculator.divide(1, 0)}).toThrowError("divide by 0");
   });
 
   it('should spy a multiply function', function () {
