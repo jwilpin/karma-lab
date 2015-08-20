@@ -8,15 +8,15 @@ angular.module('karmaLabApp')
     };
     $scope.sign = '+';
     
-    $scope.doCalculations = function(sign, a, b){
-        switch(sign){
-            case '+': $scope.result = Calculator.add(a, b); break;
-            case '-': $scope.result = Calculator.subtract(a, b); break;
-            case '*': $scope.result = Calculator.multiply(a, b); break;
-            case '/': $scope.result = Calculator.divide(a, b); break;
+    $scope.doCalculations = function(){
+        switch($scope.sign){
+            case '+': $scope.result = Calculator.add($scope.values.first, $scope.values.second); break;
+            case '-': $scope.result = Calculator.subtract($scope.values.first, $scope.values.second); break;
+            case '*': $scope.result = Calculator.multiply($scope.values.first, $scope.values.second); break;
+            case '/': $scope.result = Calculator.divide($scope.values.first, $scope.values.second); break;
         }
     };
 
-    $scope.doCalculations($scope.sign, $scope.values.first, $scope.values.second);
+    $scope.doCalculations();
 
   });

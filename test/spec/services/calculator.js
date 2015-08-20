@@ -3,11 +3,11 @@
 describe('Service: Calculator', function () {
 
   // load the service's module
-  beforeEach(module('karmaLabApp'));
+  beforeEach(angular.mock.module('karmaLabApp'));
 
   // instantiate service
   var Calculator;
-  beforeEach(inject(function (_Calculator_) {
+  beforeEach(angular.mock.inject(function (_Calculator_) {
     Calculator = _Calculator_;
   }));
 
@@ -36,16 +36,27 @@ describe('Service: Calculator', function () {
     expect(function(){Calculator.divide(1, 0)}).toThrowError("divide by 0");
   });
 
-  it('should spy a multiply function', function () {
+  it('should spy a multiply function with return value (avoid real service call)', function () {
     expect(Calculator.multiply).toBeDefined();
     var a = 1, b = 10;
-    spyOn(Calculator, 'multiply');
-    Calculator.multiply(a, b);
+    spyOn(Calculator, 'multiply').and.returnValue(0);
+    var multiply = Calculator.multiply(a, b);
     expect(Calculator.multiply).toHaveBeenCalled();
     expect(Calculator.multiply).toHaveBeenCalledWith(a, b);
+    expect(multiply).toBe(0);
   });
 
-  it('should spy and callThrough a multiply function', function () {
+  it('should spy a multiply function with and.callFake (avoid real service call using function)', function () {
+    expect(Calculator.multiply).toBeDefined();
+    var a = 1, b = 10;
+    spyOn(Calculator, 'multiply').and.callFake(function(){return 0;});
+    var multiply = Calculator.multiply(a, b);
+    expect(Calculator.multiply).toHaveBeenCalled();
+    expect(Calculator.multiply).toHaveBeenCalledWith(a, b);
+    expect(multiply).toBe(0);
+  });
+
+  it('should spy and callThrough (call real service) a multiply function', function () {
     expect(Calculator.multiply).toBeDefined();
     var a = 1, b = 10;
     spyOn(Calculator, 'multiply').and.callThrough();

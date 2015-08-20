@@ -12,13 +12,13 @@
     </style>
 </head>
 <body>
-<div class="header high">
+<div class="header low">
     <h1>Code coverage report for <span class="entity">./app/scripts/services/calculator.js</span></h1>
     <h2>
-        Statements: <span class="metric">100% <small>(11 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Branches: <span class="metric">100% <small>(2 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Functions: <span class="metric">100% <small>(5 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Lines: <span class="metric">100% <small>(11 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">6.25% <small>(1 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">6.25% <small>(1 / 16)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">./app/scripts/services/</a> &#187; calculator.js</div>
@@ -55,7 +55,13 @@
 28
 29
 30
-31</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+31
+32
+33
+34
+35
+36
+37</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -66,24 +72,30 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8</span>
-<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
@@ -95,32 +107,38 @@
  * Service in the karmaLabApp.
  */
 angular.module('karmaLabApp')
-  .service('Calculator', function () {
-    this.add = function(a, b){
-        return a + b;
+  .service('Calculator', <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    this.add = <span class="fstat-no" title="function not covered" >function(a, b){</span></span>
+<span class="cstat-no" title="statement not covered" >        console.log("CalculatorService.add has been called");</span>
+<span class="cstat-no" title="statement not covered" >        return a + b;</span>
     };
     
-    this.subtract = function(a, b){
-        return a - b;
+<span class="cstat-no" title="statement not covered" >    this.subtract = <span class="fstat-no" title="function not covered" >function(a, b){</span></span>
+<span class="cstat-no" title="statement not covered" >        console.log("CalculatorService.subtract has been called");</span>
+<span class="cstat-no" title="statement not covered" >        return a - b;</span>
     };
     
-    this.multiply = function(a, b){
-        return a * b;
+<span class="cstat-no" title="statement not covered" >    this.multiply = <span class="fstat-no" title="function not covered" >function(a, b){</span></span>
+<span class="cstat-no" title="statement not covered" >        console.log("CalculatorService.multiply has been called");</span>
+<span class="cstat-no" title="statement not covered" >        return a * b;</span>
     };
     
-    this.divide = function(a, b){
-        if(b == 0)
-        	throw new Error("divide by 0");
+<span class="cstat-no" title="statement not covered" >    this.divide = <span class="fstat-no" title="function not covered" >function(a, b){</span></span>
+<span class="cstat-no" title="statement not covered" >        console.log("CalculatorService.divide has been called");</span>
+<span class="cstat-no" title="statement not covered" >        if(b == 0)</span>
+<span class="cstat-no" title="statement not covered" >        	throw new Error("divide by 0");</span>
         else
-        	return a / b;
+<span class="cstat-no" title="statement not covered" >        	return a / b;</span>
     };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    console.log("CalculatorService loaded!");</span>
   });
 &nbsp;</pre></td></tr>
 </table></pre>
 
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Aug 19 2015 21:11:44 GMT-0500 (Hora est. Pacífico, Sudamérica)</div>
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Aug 19 2015 22:41:57 GMT-0500 (Hora est. Pacífico, Sudamérica)</div>
 </div>
 <script src="../../../prettify.js"></script>
 <script>

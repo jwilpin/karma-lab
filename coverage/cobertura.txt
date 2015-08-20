@@ -1,68 +1,73 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="23"  lines-covered="20"  line-rate="0.8695999999999999"  branches-valid="6"  branches-covered="3"  branch-rate="0.5"  timestamp="1440036704668" complexity="0" version="0.1">
+<coverage lines-valid="28"  lines-covered="11"  line-rate="0.39289999999999997"  branches-valid="6"  branches-covered="2"  branch-rate="0.3333"  timestamp="1440042117917" complexity="0" version="0.1">
 <sources>
 	<source>E:\PROYECTOS\SURA\karma-lab</source>
 </sources>
 <packages>
-	<package name="..app.scripts.controllers"  line-rate="0.7"  branch-rate="0.25" >
+	<package name="..app.scripts.controllers"  line-rate="0.8"  branch-rate="0.5" >
 	<classes>
-		<class name="main.js"  filename="app\scripts\controllers\main.js"  line-rate="0.7"  branch-rate="0.25" >
+		<class name="main.js"  filename="app\scripts\controllers\main.js"  line-rate="0.8"  branch-rate="0.5" >
 		<methods>
-			<method name="(anonymous_1)"  hits="1"  signature="()V" >
-				<lines><line number="4"  hits="1" /></lines>
+			<method name="(anonymous_1)"  hits="2"  signature="()V" >
+				<lines><line number="4"  hits="2" /></lines>
 			</method>
-			<method name="(anonymous_2)"  hits="1"  signature="()V" >
-				<lines><line number="11"  hits="1" /></lines>
+			<method name="(anonymous_2)"  hits="3"  signature="()V" >
+				<lines><line number="11"  hits="3" /></lines>
 			</method>
 		</methods>
 		<lines>
 			<line number="3"  hits="1"  branch="false" />
-			<line number="5"  hits="1"  branch="false" />
-			<line number="9"  hits="1"  branch="false" />
-			<line number="11"  hits="1"  branch="false" />
-			<line number="12"  hits="1"  branch="true"  condition-coverage="25% (1/4)" />
-			<line number="13"  hits="1"  branch="false" />
+			<line number="5"  hits="2"  branch="false" />
+			<line number="9"  hits="2"  branch="false" />
+			<line number="11"  hits="2"  branch="false" />
+			<line number="12"  hits="3"  branch="true"  condition-coverage="50% (2/4)" />
+			<line number="13"  hits="2"  branch="false" />
 			<line number="14"  hits="0"  branch="false" />
-			<line number="15"  hits="0"  branch="false" />
+			<line number="15"  hits="1"  branch="false" />
 			<line number="16"  hits="0"  branch="false" />
-			<line number="20"  hits="1"  branch="false" />
+			<line number="20"  hits="2"  branch="false" />
 		</lines>
 		</class>
 	</classes>
 	</package>
-	<package name="..app.scripts.services"  line-rate="1"  branch-rate="1" >
+	<package name="..app.scripts.services"  line-rate="0.0625"  branch-rate="0" >
 	<classes>
-		<class name="calculator.js"  filename="app\scripts\services\calculator.js"  line-rate="1"  branch-rate="1" >
+		<class name="calculator.js"  filename="app\scripts\services\calculator.js"  line-rate="0.0625"  branch-rate="0" >
 		<methods>
-			<method name="(anonymous_1)"  hits="8"  signature="()V" >
-				<lines><line number="11"  hits="8" /></lines>
+			<method name="(anonymous_1)"  hits="0"  signature="()V" >
+				<lines><line number="11"  hits="0" /></lines>
 			</method>
-			<method name="(anonymous_2)"  hits="3"  signature="()V" >
-				<lines><line number="12"  hits="3" /></lines>
+			<method name="(anonymous_2)"  hits="0"  signature="()V" >
+				<lines><line number="12"  hits="0" /></lines>
 			</method>
-			<method name="(anonymous_3)"  hits="1"  signature="()V" >
-				<lines><line number="16"  hits="1" /></lines>
+			<method name="(anonymous_3)"  hits="0"  signature="()V" >
+				<lines><line number="17"  hits="0" /></lines>
 			</method>
-			<method name="(anonymous_4)"  hits="1"  signature="()V" >
-				<lines><line number="20"  hits="1" /></lines>
+			<method name="(anonymous_4)"  hits="0"  signature="()V" >
+				<lines><line number="22"  hits="0" /></lines>
 			</method>
-			<method name="(anonymous_5)"  hits="2"  signature="()V" >
-				<lines><line number="24"  hits="2" /></lines>
+			<method name="(anonymous_5)"  hits="0"  signature="()V" >
+				<lines><line number="27"  hits="0" /></lines>
 			</method>
 		</methods>
 		<lines>
 			<line number="10"  hits="1"  branch="false" />
-			<line number="12"  hits="8"  branch="false" />
-			<line number="13"  hits="3"  branch="false" />
-			<line number="16"  hits="8"  branch="false" />
-			<line number="17"  hits="1"  branch="false" />
-			<line number="20"  hits="8"  branch="false" />
-			<line number="21"  hits="1"  branch="false" />
-			<line number="24"  hits="8"  branch="false" />
-			<line number="25"  hits="2"  branch="true"  condition-coverage="100% (2/2)" />
-			<line number="26"  hits="1"  branch="false" />
-			<line number="28"  hits="1"  branch="false" />
+			<line number="12"  hits="0"  branch="false" />
+			<line number="13"  hits="0"  branch="false" />
+			<line number="14"  hits="0"  branch="false" />
+			<line number="17"  hits="0"  branch="false" />
+			<line number="18"  hits="0"  branch="false" />
+			<line number="19"  hits="0"  branch="false" />
+			<line number="22"  hits="0"  branch="false" />
+			<line number="23"  hits="0"  branch="false" />
+			<line number="24"  hits="0"  branch="false" />
+			<line number="27"  hits="0"  branch="false" />
+			<line number="28"  hits="0"  branch="false" />
+			<line number="29"  hits="0"  branch="true"  condition-coverage="0% (0/2)" />
+			<line number="30"  hits="0"  branch="false" />
+			<line number="32"  hits="0"  branch="false" />
+			<line number="35"  hits="0"  branch="false" />
 		</lines>
 		</class>
 	</classes>
@@ -71,13 +76,13 @@
 	<classes>
 		<class name="app.js"  filename="app\scripts\app.js"  line-rate="1"  branch-rate="1" >
 		<methods>
-			<method name="(anonymous_1)"  hits="8"  signature="()V" >
-				<lines><line number="22"  hits="8" /></lines>
+			<method name="(anonymous_1)"  hits="2"  signature="()V" >
+				<lines><line number="22"  hits="2" /></lines>
 			</method>
 		</methods>
 		<lines>
 			<line number="11"  hits="1"  branch="false" />
-			<line number="23"  hits="8"  branch="false" />
+			<line number="23"  hits="2"  branch="false" />
 		</lines>
 		</class>
 	</classes>
