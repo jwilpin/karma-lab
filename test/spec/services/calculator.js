@@ -32,7 +32,6 @@ describe('Service: Calculator', function () {
 
   it('should trhow exception when divide by 0', function () {
     expect(Calculator.divide).toBeDefined();
-    //pending("No se porque no esta capturando la excepcion!");
     expect(function(){Calculator.divide(1, 0)}).toThrowError("divide by 0");
   });
 
@@ -75,4 +74,11 @@ describe('Service: Calculator', function () {
     expect(divide).toBeCloseTo(0.008, 3);
   });
 
+  it('should SpyOn returnValue', function () {
+    expect(Calculator.divide).toBeDefined();
+    spyOn(Calculator, 'divide').and.returnValue(745);
+    var result = Calculator.divide(1,2);
+    expect(result).toBe(745);
+  });
 });
+
