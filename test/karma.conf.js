@@ -105,7 +105,7 @@ module.exports = function(config) {
         // output them in the `dir` directory
         { type: 'cobertura', subdir: '.', file: 'cobertura.txt' },
         { type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' },
-        { type: 'teamcity', subdir: '.'}, //file: 'teamcity.txt' },
+        { type: 'teamcity', subdir: '.', file: 'teamcity.txt' },
         { type: 'text', subdir: '.', file: 'text.txt' },
         { type: 'text-summary', subdir: '.'},//, file: 'text-summary.txt' },
       ]

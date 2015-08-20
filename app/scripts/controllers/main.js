@@ -7,7 +7,6 @@ angular.module('karmaLabApp')
         second: 0
     };
     $scope.sign = '+';
-    $scope.result = 0;
     
     $scope.doCalculations = function(sign, a, b){
         switch(sign){
@@ -17,4 +16,7 @@ angular.module('karmaLabApp')
             case '/': $scope.result = Calculator.divide(a, b); break;
         }
     };
+
+    $scope.doCalculations($scope.sign, $scope.values.first, $scope.values.second);
+
   });
