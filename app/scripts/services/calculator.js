@@ -32,5 +32,13 @@ angular.module('karmaLabApp')
         	return a / b;
     };
 
+    this.modulus = function(a, b){
+        console.log("CalculatorService.modulus has been called");
+        if(b == 0)
+            return Promise.reject("divide by 0");
+        else
+            return Promise.resolve(a % b);
+    };
+
     console.log("CalculatorService loaded!");
   });

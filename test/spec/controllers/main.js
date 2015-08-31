@@ -8,10 +8,9 @@ describe('Controller: MainCtrl', function () {
   var ctrl, scope, calculator;
 
   // Initialize the controller and a mock scope
-  beforeEach(angular.mock.inject(function ($controller, $rootScope) {
-    calculator = jasmine.createSpyObj('calculator', ['add', 'subtract', 'multiply', 'divide']);
-    calculator.add.and.callFake(function() {return 1;});
+  beforeEach(angular.mock.inject(function ($controller, $rootScope, _Calculator_) {
     scope = $rootScope.$new();
+    calculator = _Calculator_;
     ctrl = $controller('MainCtrl', {
       $scope: scope,
       Calculator: calculator

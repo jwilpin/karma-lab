@@ -1,11 +1,3 @@
 <div ng-controller="MainCtrl">
-    <input type="number" ng-model="values.first" ng-change="doCalculations()">
-        <select ng-model="sign" ng-change="doCalculations()">
-            <option value="+">+
-            <option value="-">-
-            <option value="*">*
-            <option value="/">/
-        </select>
-    <input type="number" ng-model="values.second" ng-change="doCalculations()">
-        = {{result}}
+	<my-directive></my-directive/>
 </div>

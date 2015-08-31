@@ -80,5 +80,12 @@ describe('Service: Calculator', function () {
     var result = Calculator.divide(1,2);
     expect(result).toBe(745);
   });
+
+  it('should calculate 5 % 2 == 1', function () {
+    expect(Calculator.add).toBeDefined();
+    expect(Calculator.add(1, 2)).toBe(3);
+  });
+
+
 });
 

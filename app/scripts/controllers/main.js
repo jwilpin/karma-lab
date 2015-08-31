@@ -14,6 +14,10 @@ angular.module('karmaLabApp')
             case '-': $scope.result = Calculator.subtract($scope.values.first, $scope.values.second); break;
             case '*': $scope.result = Calculator.multiply($scope.values.first, $scope.values.second); break;
             case '/': $scope.result = Calculator.divide($scope.values.first, $scope.values.second); break;
+            case '%': {
+                Calculator.modulus($scope.values.first, $scope.values.second).then(function(value){$scope.result = value;}).catch(function(error){$scope.result = error;});
+                break;
+            }
         }
     };
 
